@@ -16,3 +16,25 @@ a philosopher dies of starvation.<br>
 • Philosophers don’t speak with each other.<br>
 • Philosophers don’t know if another philosopher is about to die.<br>
 • No need to say that philosophers should avoid dying!<br>
+
+
+
+# About Directories:
+- First directory "mandory" is a solution using <b>mutexes</b>.
+- Second directory "bonus" is a solution using <b>semaphores</b>.
+
+
+# How to use:
+to use <b>mutexes</b> solution:
+$ make 
+to use <b>semaphores</b> solution
+$ make bonus
+then 
+$./philo <number of philosophers> <time_to_die> <time_to_eat> <time_to_eat> <number_of_times_each_philosopher_must_eat>
+or alternatively
+$./philo_bonus <number of philosophers> <time_to_die> <time_to_eat> <time_to_eat> <number_of_times_each_philosopher_must_eat>
+
+The program will run until a philosopher die or each philosopher eat <number_of_times_each_philosopher_must_eat> times.
+  
+
+  
