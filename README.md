@@ -30,8 +30,8 @@ $ <b> make</b> <br>
 to use <b>semaphores</b> solution <br>
 $ <b> make bonus </b> <br>
 then <br>
-$ <b> ./philo <number of philosophers> <time_to_die> <time_to_eat> <time_to_eat> <number_of_times_each_philosopher_must_eat> <br>
- or alternatively <br> </b>
+$ <b> ./philo <number of philosophers> <time_to_die> <time_to_eat> <time_to_eat> <number_of_times_each_philosopher_must_eat> </b> <br>
+ or alternatively <br> 
 $ <b> ./philo_bonus <number of philosophers> <time_to_die> <time_to_eat> <time_to_eat> <number_of_times_each_philosopher_must_eat> </b> <br>
 <br>
 The program will run until a philosopher die or each philosopher eat <number_of_times_each_philosopher_must_eat> times.
