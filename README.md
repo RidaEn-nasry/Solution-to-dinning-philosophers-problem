@@ -26,13 +26,13 @@ a philosopher dies of starvation.<br>
 
 # How to use:
 to use <b>mutexes</b> solution:<br>
-$ make <br>
+$ <b> make</b> <br>
 to use <b>semaphores</b> solution <br>
-$ make bonus <br>
+$ <b> make bonus </b> <br>
 then <br>
-$./philo <number of philosophers> <time_to_die> <time_to_eat> <time_to_eat> <number_of_times_each_philosopher_must_eat> <br>
-or alternatively <br>
-$./philo_bonus <number of philosophers> <time_to_die> <time_to_eat> <time_to_eat> <number_of_times_each_philosopher_must_eat> <br>
+$ <b> ./philo <number of philosophers> <time_to_die> <time_to_eat> <time_to_eat> <number_of_times_each_philosopher_must_eat> <br>
+ or alternatively <br> </b>
+$ <b> ./philo_bonus <number of philosophers> <time_to_die> <time_to_eat> <time_to_eat> <number_of_times_each_philosopher_must_eat> </b> <br>
 <br>
 The program will run until a philosopher die or each philosopher eat <number_of_times_each_philosopher_must_eat> times.
  <br>
