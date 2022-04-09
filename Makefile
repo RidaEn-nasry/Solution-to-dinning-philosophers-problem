@@ -12,11 +12,13 @@ NAME_BONUS = philo_bonus
 
 SRCS_FILE =	./mandatory/srcs/philo.c \
 			./mandatory/srcs/helpers.c	\
-			./mandatory/srcs/utils.c
+			./mandatory/srcs/utils.c\
+			./mandatory/srcs/sleep.c
 
 SRCS_FILE_BONUS = ./bonus/srcs/philo_bonus.c\
 					./bonus/srcs/helpers_bonus.c\
-					./bonus/srcs/utils_bonus.c
+					./bonus/srcs/utils_bonus.c\
+					./bonus/srcs/sleep_bonus.c
 
 OBJS = $(SRCS_FILE:.c=.o)
 

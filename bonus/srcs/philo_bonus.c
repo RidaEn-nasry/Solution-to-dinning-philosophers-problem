@@ -51,7 +51,7 @@ void	*monitor_die(void *arg)
 			exit(1);
 		}
 		sem_post(ph->sem_eat);
-		usleep(100);
+		ft_usleep(100);
 	}
 	return (NULL);
 }
@@ -64,9 +64,11 @@ void	*routine(t_philo	*ph)
 		sem_post(ph->args->sem_forks);
 		sem_post(ph->args->sem_forks);
 		message(ph->args, ph->id, "is sleeping");
-		usleep(ph->args->time_to_sleep * 1000);
+		ft_usleep(ph->args->time_to_sleep);
+		
+
 		message(ph->args, ph->id, "is thinking");
-		usleep(100);
+		ft_usleep(100);
 	}
 	return (NULL);
 }
@@ -91,7 +93,7 @@ void	start_philo(t_args	*args)
 			exit(1);
 		}
 		i++;
-		usleep(100);
+		ft_usleep(100);
 	}
 	close_processes(args);
 }

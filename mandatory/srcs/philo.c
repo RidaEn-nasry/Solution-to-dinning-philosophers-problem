@@ -54,7 +54,7 @@ void	*monitor(void *arg)
 		if (ph->args->meal_ammount
 			&& ph->meal_counter >= ph->args->meal_ammount)
 			checking_meal(ph);
-		usleep(100);
+		ft_usleep(100);
 	}
 	return (NULL);
 }
@@ -70,7 +70,7 @@ void	*routine(void *arg)
 		pthread_mutex_unlock(&ph->args->mutex_forks[ph->philo_left_fork]);
 		pthread_mutex_unlock(&ph->args->mutex_forks[ph->philo_right_fork]);
 		message(ph->args, ph->philo_number, "is sleeping");
-		usleep(ph->args->time_to_sleep * 1000);
+		ft_usleep(ph->args->time_to_sleep);
 		message(ph->args, ph->philo_number, "is thinking");
 	}
 	return (NULL);
@@ -87,16 +87,17 @@ void	start_philo(t_args *args)
 		pthread_create(&args->philo[i]->philo_thread, NULL, routine,
 			(void *)args->philo[i]);
 		i++;
-		usleep(100);
+		ft_usleep(100);
 	}
+
 	i = 0;
 	while (i < args->philo_amount)
 	{
 		pthread_create(&args->philo[i]->monitor_thread, NULL, monitor,
 			(void *)args->philo[i]);
 		i++;
-		usleep(100);
-	}
+	ft_usleep(100
+	);	}
 }
 
 int	main(int argc, char **argv)

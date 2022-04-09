@@ -56,6 +56,7 @@ void		take_fork(t_philo *ph);
 void		eat(t_philo *ph);
 void		go_to_bed(t_philo *ph);
 int			is_num(char *string);
+void		ft_usleep(long int time_in_ms);
 
 long long	convert(const char *str);
 int			invalid(char **argv, int argc);

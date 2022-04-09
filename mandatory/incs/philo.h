@@ -57,5 +57,6 @@ void		go_to_bed(t_philo *ph);
 int			is_num(char *string);
 long long	convert(const char *str);
 int			invalid(char **argv, int argc);
+void		ft_usleep(long int time_in_ms);
 
 #endif

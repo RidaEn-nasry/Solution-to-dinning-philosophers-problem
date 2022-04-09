@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   helpers_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ren-nasr <ren-nasr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wa5ina <wa5ina@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 13:34:09 by ren-nasr          #+#    #+#             */
-/*   Updated: 2022/04/01 14:22:25 by ren-nasr         ###   ########.fr       */
+/*   Updated: 2022/04/09 16:28:51 by wa5ina           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,6 +109,6 @@ void	take_fork(t_philo *philo)
 	sem_wait(philo->sem_eat);
 	sem_post(philo->args->sem_meal);
 	philo->last_meal_time = get_time();
-	usleep(philo->args->time_to_eat * 1000);
+	ft_usleep(philo->args->time_to_eat);
 	sem_post(philo->sem_eat);
 }

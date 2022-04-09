@@ -112,7 +112,7 @@ void	take_fork(t_philo *philo)
 	philo->last_meal_time = get_time();
 	philo->is_eating = 1;
 	message(philo->args, philo->philo_number, "is eating");
-	usleep(philo->args->time_to_eat * 1000);
+	ft_usleep(philo->args->time_to_eat);
 	philo->is_eating = 0;
 	philo->meal_counter++;
 	pthread_mutex_unlock(&philo->mutex_eating);

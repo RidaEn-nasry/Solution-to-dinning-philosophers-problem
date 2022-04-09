@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ren-nasr <ren-nasr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wa5ina <wa5ina@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 14:32:33 by ren-nasr          #+#    #+#             */
-/*   Updated: 2022/04/01 14:19:28 by ren-nasr         ###   ########.fr       */
+/*   Updated: 2022/04/09 16:22:45 by wa5ina           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int	get_time(void)
 	gettimeofday(&tv, NULL);
 	return ((tv.tv_sec * 1000) + (tv.tv_usec / 1000));
 }
+
 
 void	message(t_args *table, int philo_number, char *msg)
 {
