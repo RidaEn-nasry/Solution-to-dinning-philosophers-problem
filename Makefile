@@ -40,7 +40,7 @@ clean:
 	$(RM) $(OBJS) $(OBJS_BONUS)
 
 fclean	:	clean
-		$(RM) ./mandatory/$(NAME) ./bonus/$(NAME_BONUS)
+		$(RM) $(NAME) $(NAME_BONUS)
 
 re		:	fclean make
 

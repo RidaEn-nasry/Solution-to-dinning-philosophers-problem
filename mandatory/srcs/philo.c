@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ren-nasr <ren-nasr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: wa5ina <wa5ina@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 10:31:41 by ren-nasr          #+#    #+#             */
-/*   Updated: 2022/04/01 14:20:33 by ren-nasr         ###   ########.fr       */
+/*   Updated: 2022/04/09 17:18:29 by wa5ina           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	*monitor(void *arg)
 		if (ph->args->meal_ammount
 			&& ph->meal_counter >= ph->args->meal_ammount)
 			checking_meal(ph);
-		ft_usleep(100);
+			ft_usleep(100);
 	}
 	return (NULL);
 }
@@ -87,7 +87,7 @@ void	start_philo(t_args *args)
 		pthread_create(&args->philo[i]->philo_thread, NULL, routine,
 			(void *)args->philo[i]);
 		i++;
-		ft_usleep(100);
+		ft_usleep(700);
 	}
 
 	i = 0;
@@ -96,8 +96,8 @@ void	start_philo(t_args *args)
 		pthread_create(&args->philo[i]->monitor_thread, NULL, monitor,
 			(void *)args->philo[i]);
 		i++;
-	ft_usleep(100
-	);	}
+	ft_usleep(700);	
+	}
 }
 
 int	main(int argc, char **argv)

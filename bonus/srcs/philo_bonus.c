@@ -66,7 +66,6 @@ void	*routine(t_philo	*ph)
 		message(ph->args, ph->id, "is sleeping");
 		ft_usleep(ph->args->time_to_sleep);
 		
-
 		message(ph->args, ph->id, "is thinking");
 		ft_usleep(100);
 	}
@@ -93,7 +92,7 @@ void	start_philo(t_args	*args)
 			exit(1);
 		}
 		i++;
-		ft_usleep(100);
+		ft_usleep(700);
 	}
 	close_processes(args);
 }
