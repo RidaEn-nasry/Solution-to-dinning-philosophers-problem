@@ -1,5 +1,11 @@
 # Solution-to-dinning-philosophers-problem
 
+
+The Dining Philosophers problem is a classic problem in computer science that involves five philosophers who must alternate between thinking and eating without blocking each other. In this project, mutexes and condition variables were used to ensure that the philosophers could eat without blocking each other. A deadlock detection mechanism was also implemented to prevent the program from hanging. Threads were used to represent the philosophers, and their actions were coordinated using mutexes and condition variables. This project provided a good opportunity to learn more about concurrent programming and the challenges of managing multiple threads.
+
+![dpp](https://user-images.githubusercontent.com/65143740/220583456-ff0ee8dd-8133-47d0-bcd6-cc958d727e79.png)
+
+
 • One or more philosophers sit at a round table.<br>
 There is a large bowl of spaghetti in the middle of the table.<br>
 • The philosophers alternatively eat, think, or sleep.<br>
